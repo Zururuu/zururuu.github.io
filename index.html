@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M. Juang Irsyad Mubarok</title>
+    <title>Zururuu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Montserrat:wght@500&family=Rubik:ital,wght@0,341;1,341&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,28 +15,32 @@
 <body>
     <div class="container">
         <div class="wrapper">
-            <div class="card text-center">                                           
-                <h1 class="title font-title">DISCORD</h1>
-                <a class="btn" href="https://discordapp.com/users/710778913508556880" style="text-decoration: none; color: inherit;">
-                <i class="fa-brands fa-discord icons"></i>
-                </a>
-                <p class="font-desc">@zururuu</p>
+            <div class="img-profile">
+                <img src="profile.jpeg" style="max-width: 200px; max-height: 200px" alt="Profile Picture">
             </div>
-            <div class="card text-center">
-                <h1 class="title font-title">INSTAGRAM</h1>
-                <a class="btn" href="https://www.instagram.com/zururuu" style="text-decoration: none; color: inherit;">
-                <i class="fa-brands fa-instagram icons"></i>
-                </a>
-                <p class="font-desc">@zururuu</p>
+            <div class="text-center">
+                <h1 class="title">Zuru</h1>
+                <h2 class="bio">A newbie Indonesian web developer.</h2>
             </div>
-            <div class="card text-center">
-                <h1 class="title font-title">GITHUB</h1>
-                <a class="btn" href="https://github.com/Zururuu" style="text-decoration: none; color: inherit;">
-                <i class="fa-brands fa-github icons"></i>
-                </a>
-                <p class="font-desc">@Zururuu</p>
+            <div class="container-btn">        
+                <button class="btn btn-dc" onclick="redirDiscord()"><i class="fa-brands fa-discord"></i> Discord</button>
+                <button class="btn btn-ig" onclick="redirInstagram()"><i class="fa-brands fa-instagram"></i> Instagram</button>
+                <button class="btn btn-gh" onclick="redirGitHub()"><i class="fa-brands fa-github"></i> GitHub</button>
             </div>
         </div>
     </div>
+    <script>
+        function redirDiscord() {
+            window.location.href = "https://discord.com/users/710778913508556880"
+        }
+
+        function redirInstagram() {
+            window.location.href = "https://www.instagram.com/zururuu"
+        }
+
+        function redirGitHub() {
+            window.location.href = "https://github.com/Zururuu"
+        }
+    </script>
 </body>
 </html>
