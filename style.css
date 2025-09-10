@@ -1,0 +1,69 @@
+/*
+margin: jarak div antara div lain
+padding: ukuran div nya agar tidak mepet
+ */
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.font-title {
+    font-family: 'Silkscreen';
+}
+
+.font-desc {
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+}
+
+:root {
+    --bg-primary: rgb(32, 114, 221);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+
+.card {
+    margin: 20px;
+    padding: 40px;
+    border: 5px solid #ccc;
+    background-color: #fafafa;    
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.card:hover  {
+    transform: scale(1.05);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;   
+}
+
+.icons {
+    font-size: 50px;
+    color: var(--bg-primary);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
