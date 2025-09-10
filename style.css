@@ -1,69 +1,109 @@
 /*
 margin: jarak div antara div lain
 padding: ukuran div nya agar tidak mepet
+width: lebar div
  */
 
 *, html, body {
     margin: 0;
     padding: 0;
-}
-
-.font-title {
-    font-family: 'Silkscreen';
-}
-
-.font-desc {
-    font-family: 'Sen', sans-serif;
-    font-size: 20px;
+    box-sizing: border-box;
 }
 
 :root {
-    --bg-primary: rgb(32, 114, 221);
+    --border-shadow: 0 0 26px 10px #0f121460;
+    --color-dc: #5865F2;
+    --color-ig: #E1306C;
+    --color-gh: black;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Jost';
+        background-color: #1F252C
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--bg-primary);
+    text-align: center;
+    margin-top: 18%;
 }
 
-.wrapper {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-}
-
-
-.card {
-    margin: 20px;
-    padding: 40px;
-    border: 5px solid #ccc;
-    background-color: #fafafa;    
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s;
-}
-
-.card:hover  {
-    transform: scale(1.05);
+.img-profile img {
+    border-radius: 50%;
+    box-shadow: var(--border-shadow);
+    margin-bottom: 8px;
 }
 
 .text-center {
-    text-align: center;
+    color: white; 
 }
 
 .title {
-    font-size: 30px;   
+    font-family: 'Montserrat';
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
-.icons {
-    font-size: 50px;
-    color: var(--bg-primary);
-    margin-top: 20px;
-    margin-bottom: 20px;
+.bio {
+    font-family: 'Rubik';
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.container-btn {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Jost';
+}
+
+.btn-dc {
+    background-color: var(--color-dc);
+    color: white;
+    border: none;
+    transition: background 0.3s, color 0.3s, border 0.3s, transform 0.3s;
+}
+
+.btn-dc:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-dc);
+    color: var(--color-dc);
+    transform: scale(1.07);
+}
+
+.btn-ig {
+    background-color: var(--color-ig);
+    color: white;
+    border: none;
+    transition: background 0.3s, color 0.3s, border 0.3s, transform 0.3s;
+}
+
+.btn-ig:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-ig);
+    color: var(--color-ig);
+    transform: scale(1.07);
+}
+
+.btn-gh {
+    background-color: var(--color-gh);
+    color: white;
+    border: none;
+    transition: background 0.3s, color 0.3s, border 0.3s, transform 0.3s;
+}
+
+.btn-gh:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-gh);
+    color: var(--color-gh);
+    transform: scale(1.07);
 }
 
