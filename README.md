@@ -1,2 +1,2 @@
 # zururuu.github.io
-My very very first website.
+My very very first website, <s>dunno what to say anymore</s>.
