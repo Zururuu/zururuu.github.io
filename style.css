@@ -61,7 +61,6 @@ body {
 }
 
 .btn {
-    border: 2px solid black;
     border-radius: 50px;
     padding: 10px 20px;
     margin: 20px;
@@ -75,7 +74,7 @@ body {
     background-color: var(--color-dc);
     color: white;
     border: none;
-    transition: background 0.3s, color 0.3s, border 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .btn-dc:hover {
@@ -88,7 +87,7 @@ body {
     background-color: var(--color-ig);
     color: white;
     border: none;
-    transition: background 0.3s, color 0.3s, border 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .btn-ig:hover {
@@ -101,7 +100,7 @@ body {
     background-color: var(--color-gh);
     color: white;
     border: none;
-    transition: background 0.3s, color 0.3s, border 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .btn-gh:hover {
@@ -109,3 +108,4 @@ body {
     color: var(--color-gh);
     transform: scale(1.05);
 }
+
