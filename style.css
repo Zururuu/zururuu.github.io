@@ -18,7 +18,6 @@ width: lebar div
 }
 
 body {
-    font-family: 'Jost';
     background-color: #1F252C
 }
 
@@ -31,17 +30,26 @@ body {
     text-align: center;
 }
 
+.bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://i.pinimg.com/1200x/e9/df/a5/e9dfa57595a9ec9059ac105ab1923ead.jpg");
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+}
+
 .img-profile img {
-    max-width: 200px;
+    max-width: 195px;
     max-height: 200px;
     border-radius: 50%;
 }
 
-.text-center {
+.text {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-bottom: 30px;
+    font-size: 12px;
 }
 
 .container-btn {
@@ -108,4 +116,3 @@ body {
     color: var(--color-gh);
     transform: scale(1.05);
 }
-
