@@ -11,7 +11,7 @@ width: lebar div
 }
 
 :root {
-    --border-shadow: 0 0 26px 10px #0f121460;
+    --border-shadow: 0 0 26px 10px #00000036;
     --color-dc: #5865F2;
     --color-ig: #E1306C;
     --color-gh: black;
@@ -19,33 +19,30 @@ width: lebar div
 
 body {
     font-family: 'Jost';
-        background-color: #1F252C
+    background-color: #1F252C
 }
 
 .container {
     text-align: center;
-    margin-top: 18%;
+    margin-top: 20%;
 }
 
 .img-profile img {
     border-radius: 50%;
-    box-shadow: var(--border-shadow);
-    margin-bottom: 8px;
 }
 
 .text-center {
-    color: white; 
-}
-
-.title {
-    font-family: 'Montserrat';
-    font-size: 28px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
 }
 
-.bio {
-    font-family: 'Rubik';
-    font-size: 20px;
+.name {
+    margin-bottom: 5px;
+    font-size: clamp(2rem, 2vw, 6rem);
+}
+
+.bio { 
     margin-bottom: 50px;
 }
 
@@ -73,7 +70,7 @@ body {
 }
 
 .btn-dc:hover {
-    background-color: transparent;
+    background-color: white;
     border: 2px solid var(--color-dc);
     color: var(--color-dc);
     transform: scale(1.07);
@@ -87,7 +84,7 @@ body {
 }
 
 .btn-ig:hover {
-    background-color: transparent;
+    background-color: white;
     border: 2px solid var(--color-ig);
     color: var(--color-ig);
     transform: scale(1.07);
@@ -101,9 +98,8 @@ body {
 }
 
 .btn-gh:hover {
-    background-color: transparent;
+    background-color: white;
     border: 2px solid var(--color-gh);
     color: var(--color-gh);
     transform: scale(1.07);
 }
-
