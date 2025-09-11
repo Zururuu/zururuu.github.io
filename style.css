@@ -23,11 +23,17 @@ body {
 }
 
 .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 20%;
 }
 
 .img-profile img {
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 50%;
 }
 
@@ -39,9 +45,19 @@ body {
 }
 
 .container-btn {
-    color: black;
-    display: flex;
-    justify-content: center;
+        color: black;
+        display: flex;
+        justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 80vw;
+    }
 }
 
 .btn {
