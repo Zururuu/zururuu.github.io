@@ -34,16 +34,8 @@ body {
 .text-center {
     color: white;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
     margin-bottom: 30px;
-}
-
-.name {
-    margin-bottom: 5px;
-    font-size: clamp(2rem, 2vw, 6rem);
-}
-
-.bio { 
-    margin-bottom: 50px;
 }
 
 .container-btn {
@@ -71,9 +63,8 @@ body {
 
 .btn-dc:hover {
     background-color: white;
-    border: 2px solid var(--color-dc);
     color: var(--color-dc);
-    transform: scale(1.07);
+    transform: scale(1.05);
 }
 
 .btn-ig {
@@ -85,9 +76,8 @@ body {
 
 .btn-ig:hover {
     background-color: white;
-    border: 2px solid var(--color-ig);
     color: var(--color-ig);
-    transform: scale(1.07);
+    transform: scale(1.05);
 }
 
 .btn-gh {
@@ -99,7 +89,6 @@ body {
 
 .btn-gh:hover {
     background-color: white;
-    border: 2px solid var(--color-gh);
     color: var(--color-gh);
-    transform: scale(1.07);
+    transform: scale(1.05);
 }
