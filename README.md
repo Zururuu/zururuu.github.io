@@ -1,2 +1,2 @@
-# https://zururuu.github.io
-My very very first website, <s>dunno what to say anymore lol</s>.
+## https://zururuu.github.io
+Note: Not all of the code was coded by me.
