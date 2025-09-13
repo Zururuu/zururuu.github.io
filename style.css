@@ -1,118 +1,120 @@
-/*
-margin: jarak div antara div lain
-padding: ukuran div nya agar tidak mepet
-width: lebar div
- */
-
 *, html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --border-shadow: 0 0 26px 10px #00000036;
-    --color-dc: #5865F2;
-    --color-ig: #E1306C;
-    --color-gh: black;
+  --color-dc: #5865f2;
+  --color-ig: #e1306c;
+  --color-bg: #00000099;
 }
 
 body {
-    background-color: #1F252C
+  font-family: 'Jost', sans-serif;
+  color: white;
+  background: linear-gradient(var(--color-bg), rgba(0, 0, 0, 0.6)),
+              url("https://i.pinimg.com/1200x/e9/df/a5/e9dfa57595a9ec9059ac105ab1923ead.jpg")
+              center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
 }
 
-.container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.profile-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://i.pinimg.com/1200x/e9/df/a5/e9dfa57595a9ec9059ac105ab1923ead.jpg");
-    background-size: cover;
-    background-position: top;
-    text-align: center;
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.img-profile img {
-    max-width: 195px;
-    max-height: 200px;
-    border-radius: 50%;
+.profile-img {
+  width: 200px;
+  max-width: 50vw;
+  border-radius: 50%;
 }
 
-.text {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 8px;
-    margin-bottom: 30px;
-    font-size: 12px;
+.profile-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
 }
 
-.container-btn {
-        color: black;
-        display: flex;
-        justify-content: center;
-}
-
-@media screen and (max-width: 600px) {
-    .container-btn {
-        flex-direction: column;
-        align-items: center;
-    }
-    .btn {
-        width: 80vw;
-    }
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .btn {
-    border-radius: 50px;
-    padding: 10px 50px;
-    margin: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    font-family: 'Jost';
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
+  padding: 0.6rem 3rem;
+  border-radius: 50px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .btn-dc {
-    background-color: var(--color-dc);
-    color: white;
-    border: none;
-    transition: color 0.3s, transform 0.3s;
+  background-color: var(--color-dc);
 }
 
 .btn-dc:hover {
-    background-color: white;
-    color: var(--color-dc);
-    transform: scale(1.05);
+  background-color: white;
+  color: var(--color-dc);
+  transform: scale(1.05);
 }
 
 .btn-ig {
-    background-color: var(--color-ig);
-    color: white;
-    border: none;
-    transition: color 0.3s, transform 0.3s;
+  background-color: var(--color-ig);
 }
 
 .btn-ig:hover {
-    background-color: white;
-    color: var(--color-ig);
-    transform: scale(1.05);
+  background-color: white;
+  color: var(--color-ig);
+  transform: scale(1.05);
 }
 
 .btn-gh {
-    background-color: var(--color-gh);
-    color: white;
-    border: none;
-    transition: color 0.3s, transform 0.3s;
+  background-color: black;
 }
 
 .btn-gh:hover {
-    background-color: white;
-    color: var(--color-gh);
-    transform: scale(1.05);
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+@media (max-width: 760px) {
+  .btn-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 75vw;
+    justify-content: center;
+  }
+
+  .profile-img {
+    width: 175px;
+  }
+
+  .profile-name {
+    font-size: 20px;
+  }
 }
