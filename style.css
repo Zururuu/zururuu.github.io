@@ -14,7 +14,7 @@ body {
   font-family: 'Jost', sans-serif;
   color: white;
   background: linear-gradient(var(--color-bg), rgba(0, 0, 0, 0.6)),
-              url("https://i.pinimg.com/originals/57/03/1e/57031eff7b9ca8b159829bfdc8eda4eb.gif")
+              url("https://i.pinimg.com/originals/12/2e/a0/122ea0ba2df7259c087ad75ca641118b.gif")
               center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -118,4 +118,5 @@ body {
     font-size: 20px;
   }
 }
+
 
